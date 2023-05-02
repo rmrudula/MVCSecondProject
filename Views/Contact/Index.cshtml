@@ -1,0 +1,29 @@
+﻿@model List<MVCSecondProject.Models.Domain.Contact>
+<h1>Contacts</h1>
+<table class=" table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Primary PhoneNo</th>
+            <th>Secondary PhoneNo</th>
+            <th>DateOfBirth</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var contact in Model)
+        {
+            <tr>
+                <td>@contact.Id</td>
+                <td>@contact.Name</td>
+                <td>@contact.Email</td>
+                <td>@contact.primaryPhone</td>
+                <td>@contact.secondaryPhone</td>
+                <td>@contact.DateOfBirth</td>
+                <td><a href ="Contact\View\@contact.Id">View</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

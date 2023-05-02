@@ -1,0 +1,27 @@
+﻿@model MVCSecondProject.Models.AddContactViewModel
+
+<h1>Add Contact</h1>
+<hr />
+<form method="post" action="Add">
+<div class="mb-3">
+    <label for="" class="form-label">Name</label>
+    <input type="text" class="form-control" asp-for="Name">
+</div>
+<div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email">
+</div>
+ <div class="mb-3">
+        <label for="" class="form-label">Primary PhoneNum</label>
+        <input type="number" class="form-control" asp-for="primaryPhone">
+</div>
+    <div class="mb-3">
+        <label for="" class="form-label">Secondary PhoneNum</label>
+        <input type="number" class="form-control" asp-for="secondaryPhone">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">DateOfBirth</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
